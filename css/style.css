@@ -1,0 +1,64 @@
+/* 基础样式 */
+body {
+  font-family: "AlimamaFangYuanTi", "Microsoft YaHei", "微软雅黑", "PingFang SC", "Noto Sans SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-image 0.3s, color 0.3s;
+}
+
+<style>
+body.bg-theme-1 {
+  background: url("{{ "img/bg1.jpg" | relURL }}") no-repeat center center fixed;
+  background-size: cover;
+}
+body.bg-theme-2 {
+  background: url("{{ "img/bg2.jpg" | relURL }}") no-repeat center center fixed;
+  background-size: cover;
+}
+</style>
+
+/* 顶部导航栏 */
+header nav {
+  display: flex;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  padding: 1rem;
+}
+
+/* 在夜晚风格下调整导航栏背景色 */
+body.bg-theme-2 header nav {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* 复制按钮样式 */
+.copy-btn {
+  margin-left: 1rem;
+  cursor: pointer;
+  background: #ff69b4;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-weight: bold;
+}
+
+/* 提示弹窗 */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff69b4cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 弹窗显示时的样式 */
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}

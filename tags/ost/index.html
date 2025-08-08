@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OST</title>
+
+  
+  <link rel="preload" href="https://nikey-007.github.io/songlist/fonts/AlimamaFangYuanTiVF-Thin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+     
+    body.bg-theme-1 {
+      background: url("https://nikey-007.github.io/songlist/img/bg1.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    body.bg-theme-2 {
+      background: url("https://nikey-007.github.io/songlist/img/bg2.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+     
+    @font-face {
+      font-family: "AlimamaFangYuanTi";
+      src: url('/fonts/AlimamaFangYuanTiVF-Thin.woff2') format('woff2'),
+           url('/fonts/AlimamaFangYuanTiVF-Thin.woff') format('woff');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+
+     
+    body {
+      font-family: "AlimamaFangYuanTi", "微软雅黑", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+       
+      font-size: 20px;
+      line-height: 1.6;
+      color: #111;
+    }
+  </style>
+
+  
+  <link rel="stylesheet" href="https://nikey-007.github.io/songlist/css/custom.css" />
+  <link rel="stylesheet" href="https://nikey-007.github.io/songlist/css/style.css" />
+  
+  
+  <script src="https://nikey-007.github.io/songlist/js/copy.js" defer></script>
+  <script src="https://nikey-007.github.io/songlist/js/theme-switch.js" defer></script>
+  <script src="https://nikey-007.github.io/songlist/js/search.js" defer></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js" defer></script>
+</head>
+<body class="bg-theme-1">
+  <header class="whitezhe-header">
+  <nav class="whitezhe-nav">
+    <a href="https://nikey-007.github.io/songlist/" title="首页">🏠 首页</a>
+    <a href="https://www.xiaohongshu.com/user/profile/58ee71eb5e87e71035e8a5fe" target="_blank" title="小红书">📷 小红书</a>
+    <a href="https://v.douyin.com/_iJ_2t4uYek/" target="_blank" title="抖音">🎵 抖音</a>
+    <a href="https://163cn.tv/H6jJrAg" target="_blank" title="网易云">🎧 网易云</a>
+    <button id="theme-switch-btn" title="切换背景">🌙 切换背景</button>
+  </nav>
+</header>
+
+  <main>
+    
+    <section id="search-section" style="width:90%; max-width:800px; margin:20px auto;" role="search" aria-label="歌曲、歌手、分类、语言搜索">
+      <input 
+        type="search" 
+        id="search-box" 
+        placeholder="搜索歌曲、歌手、分类、语言..." 
+        aria-label="搜索歌曲、歌手、分类、语言"
+        style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 6px; border: 1px solid #ccc;"
+      />
+      <div id="search-results" style="margin-top:10px;" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    
+  <h1>标签：OST</h1>
+  <ul>
+  
+  </ul>
+
+  </main>
+
+  <footer>
+  <p style="text-align:center; padding:1rem; font-size:0.9rem; color:#999;">
+    © 2025 Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> · 主题 WhiteZhe
+  </p>
+</footer>
+  <div id="toast" class="toast"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('theme-switch-btn');
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        const body = document.body;
+        if (body.classList.contains('bg-theme-1')) {
+          body.classList.remove('bg-theme-1');
+          body.classList.add('bg-theme-2');
+        } else {
+          body.classList.remove('bg-theme-2');
+          body.classList.add('bg-theme-1');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

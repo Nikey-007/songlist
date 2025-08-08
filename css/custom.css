@@ -1,0 +1,387 @@
+/* 主页介绍区域 */
+.home-intro {
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 40px auto; /* 上下间距 + 居中 */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 文字居中 */
+  color: #3d3f40;
+}
+
+.home-intro h1 {
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #3c3c3d; /* 主色调 */
+}
+
+.home-intro p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* 歌单列表样式，可选美化 */
+.song-table {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-size: 1rem;
+  color: #333;
+}
+
+.song-table th,
+.song-table td {
+  padding: 12px 18px;
+  text-align: left;
+  border-bottom: 1px solid #bbb;
+}
+
+.song-table thead {
+  background-color: #0e7490;
+  color: white;
+  font-weight: 700;
+}
+
+/* 原唱歌手 / 语言 / 备注 链接颜色统一 */
+.song-table td a {
+  color: #313131;  /* 比 #333 更深 */
+  text-decoration: none;
+}
+
+.song-table td a:hover {
+  color: #000; /* 悬停时纯黑 */
+}
+
+.song-table tbody tr:hover {
+  background-color: rgba(14, 116, 144, 0.1);
+}
+
+.song-table thead {
+  background-color: #4A90E2;
+  color: white;
+}
+
+.song-table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+.song-table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+
+
+/* 去掉歌名的粉色背景框，保持原字体大小和颜色 */
+.song-item a,
+.copy-btn {
+  cursor: pointer;
+  color: #4A90E2;
+  font-weight: bold;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  user-select: text; /* 允许选中文本 */
+}
+
+.song-item a:hover,
+.copy-btn:hover {
+  text-decoration: underline;
+}
+
+/* 分类和标签字体较小，颜色更淡 */
+.song-meta span {
+  font-size: 0.85rem;
+  color: #3f3f3f;
+  margin-right: 10px;
+}
+
+/* artist 页面整体布局 */
+.artist-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background: url('/background.jpg') no-repeat center center fixed; /* 可选：添加背景图 */
+  background-size: cover;
+}
+
+.artist-container {
+  background-color: rgba(255, 255, 255, 0.85); /* 半透明白色背景 */
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.song-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.song-meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+.songlist-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白色 */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.language-list {
+  list-style: none;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.75); /* 半透明白色背景 */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 更柔和的阴影 */
+}
+
+.language-list li {
+  margin-bottom: 12px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.language-list a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.language-list a:hover {
+  background-color: rgba(74, 144, 226, 0.1); /* 鼠标悬停时淡蓝色 */
+  color: #2c5aa0;
+  text-decoration: underline;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.language-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+main {
+  text-align: center;
+}
+
+main div {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: auto;
+  max-width: 800px;
+}
+
+.centered-box {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白色背景 */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  /* 去掉粉色边框 */
+  border: none;
+}
+
+.alpha-nav {
+  margin-bottom: 1rem;
+}
+
+.alpha-nav a {
+  margin: 0 0.25rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.alpha-nav a:hover {
+  color: #007acc;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul li {
+  margin: 0.3rem 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #007acc;
+}
+
+/* 语言页面主标题和说明文字 */
+.language-title, .language-description {
+  color: #333;           /* 深灰色 */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;     /* 缩小字体 */
+}
+
+.language-artist-group-title {
+  color: #0e7490;        /* 还是用主页主色，醒目 */
+  font-weight: 700;
+  font-size: 1.1rem;     /* 缩小字体 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+.language-artist-list li {
+  font-size: 1.15rem;    /* 缩小字体 */
+  color: #4A90E2;        /* 维持蓝色 */
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+
+/* 拼音字母分组标题 */
+.language-artist-group-title {
+  color: #0e7490;
+  font-weight: 700;
+  font-size: 1.0rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* 歌手名字列表 */
+.language-artist-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 每个歌手名字 */
+.language-artist-list li {
+  font-size: 1.3rem; /* 字体大一点 */
+  color: #4A90E2; /* 稍亮蓝 */
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+/* 歌手名字链接 */
+.language-artist-list a {
+  color: inherit; /* 继承父颜色 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.language-artist-list a:hover {
+  color: #0e7490;
+  text-decoration: underline;
+}
+<style>
+  body.bg-theme-1 {
+    background: url("{{ "img/bg1.jpg?v=2" | relURL }}") no-repeat center center fixed;
+    background-size: cover;
+  }
+  body.bg-theme-2 {
+    background: url("{{ "img/bg2.jpg?v=2" | relURL }}") no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
+
+
+.whitezhe-header {
+  position: sticky;
+  top: 30;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.8) !important; /* 固定半透明白色背景 */
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.whitezhe-nav {
+  color: #080808; /* 黑色字体，确保在浅色背景图上可见 */
+  padding: 10px 20px;
+}
+
+.whitezhe-nav a,
+.whitezhe-nav button {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 12px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.whitezhe-nav a:hover,
+.whitezhe-nav button:hover {
+  color: #007acc;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@font-face {
+  font-family: "AlimamaFangYuanTi";
+  src: url('../fonts/AlimamaFangYuanTiVF-Thin.woff2') format('woff2'),
+       url('../fonts/AlimamaFangYuanTiVF-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
