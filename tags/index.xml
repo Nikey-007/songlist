@@ -28,5 +28,12 @@
       <guid>https://nikey-007.github.io/songlist/tags/%E6%B5%81%E8%A1%8C/</guid>
       <description>&lt;div style=&#34;max-width:600px;margin:0 auto;padding:1.5rem;text-align:center; background-color:rgba(255,255,255,0.6);border-radius:12px;backdrop-filter:blur(10px);&#34;&gt;&#xD;&#xA;  &lt;p&gt;这是标签 &lt;strong&gt;流行&lt;/strong&gt; 页面，展示所有带有此标签的歌曲。&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;</description>
     </item>
+    <item>
+      <title>流行，OST</title>
+      <link>https://nikey-007.github.io/songlist/tags/%E6%B5%81%E8%A1%8Cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nikey-007.github.io/songlist/tags/%E6%B5%81%E8%A1%8Cost/</guid>
+      <description>&lt;div style=&#34;max-width:600px;margin:0 auto;padding:1.5rem;text-align:center; background-color:rgba(255,255,255,0.6);border-radius:12px;backdrop-filter:blur(10px);&#34;&gt;&#xD;&#xA;  &lt;p&gt;这是标签 &lt;strong&gt;流行，OST&lt;/strong&gt; 页面，展示所有带有此标签的歌曲。&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>

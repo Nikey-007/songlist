@@ -76,12 +76,122 @@
     </section>
 
     
-<div style="max-width: 700px; margin: 40px auto; background: rgba(255,255,255,0.75); padding: 30px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-  <h1 style="text-align: center; margin-bottom: 24px; color: #333;">标签分类</h1>
-  <ul style="list-style: none; padding: 0; margin: 0;">
+<div style="max-width:800px; margin:1.5rem auto; padding:2rem; background-color:rgba(255,255,255,0.2); border-radius:16px; backdrop-filter:blur(12px); font-family: 'Helvetica Neue', Arial, sans-serif;">
+
+  <h1 style="text-align:center; margin-bottom:0.8rem; font-weight:700; font-size:2rem; color:#333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    标签列表
+  </h1>
+  <p style="text-align:center; font-size:1rem; color:#555; margin-bottom:2rem;">
+    以下是所有标签，按拼音首字母分组（可点击复制标签名）
+  </p>
+
+  
+  
+  
     
-  </ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <p style="text-align:center; font-size:1.2rem; color:#0078d7; margin-top:3rem;">暂无标签数据。</p>
+  
+
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.getAttribute('data-copy-text');
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = '已复制';
+        setTimeout(() => btn.textContent = '复制', 1500);
+      });
+    });
+  });
+});
+</script>
 
   </main>
 
